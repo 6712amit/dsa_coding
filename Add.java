@@ -1,5 +1,5 @@
 
-Public class Add{
+public class Add{
 
 public static void main(String []args){
 
