@@ -1,4 +1,4 @@
-git learning points 
+git learning points (Basic cover )
 
 1. in order to start git first open git bash 
 go to that directory
