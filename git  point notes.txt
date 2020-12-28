@@ -18,7 +18,6 @@ then if we type git status // it will show that changes have made showing messag
 
 6. To make branch from master  we have command 
 'git branch dev' // A new branch will be made from master which is the main 
-
 7. to switch from master to branch or vice versa we have command
 'git checkout branchName'
 example: 'git checkout dev'  // to switch from master to branch "dev";
@@ -29,28 +28,6 @@ example: 'git checkout master' // to switch from dev to master;
  'git merge branch name '
  example 'git merge dev' // this merges dev to master
  
- 9.'git remote add origin https://github.com/6712amit/dsa_coding' // to connect local git to github sever.
- 
- 10. git remote -v // to see how many remote we have basicaly we have two fetch or pull and merge or push
- 
- 11.git command to push local files to github
- 'git push -u origin master' // then all the commited file in local server is send to github server. in master branch if we have to send in dev branch (another branch) then go to that branch by git checkout dev then 
- enter command 'git push -u origin dev' // this pushed in dev branch. similarly we can do for other branch also
- 
- 12.we can also do staging and commit with one command 
- 'git commit -am "message" ' 
- 
- 13. we can put multiple file in staging by 
- 'git add .'
- 
- 14. if we are in some branch lets say master or dev then simply 
- 'git push' // pushes the stage file int that perticular branch
- 
- 15. if we have made any changes in github then we can simply get those file in local by 
- 'git pull'  // all the changes also reflectes in local files too;
-  
- 
-
-
+xhkdjasagd
 
 
