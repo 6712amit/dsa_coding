@@ -47,4 +47,4 @@ example: 'git checkout master' // to switch from dev to master;
  'git push' // pushes the stage file int that perticular branch
  
  15. if we have made any changes in github then we can simply get those file in local by 
- 'git pull'  // all the changes also reflectes in local files too;
+  'git pull'  // all the changes also reflectes in local files too;
