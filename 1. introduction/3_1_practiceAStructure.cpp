@@ -14,10 +14,15 @@ int main(){
 struct  rectangle r;
 r.length=10;
 r.breadth=20;
-cout<<sizeof(r)<<endl;  
+cout<<sizeof(r)<<endl;  // here size is taking 4 byte for char also but it will be using only 1 byte 
  cout<<r.length<<endl;
  cout<<r.breadth<<endl;
-
+/*
+output
+12
+10
+20
+*/
 
     
 
