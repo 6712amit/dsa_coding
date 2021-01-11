@@ -13,7 +13,7 @@ void display(struct Array ar1){
 }
 int main(){
    struct  Array ar;
-   static int s;
+   
    cout<<"enter the size of array";
    cin>>ar.size;
    cout<<"enter the length of the arrays";
