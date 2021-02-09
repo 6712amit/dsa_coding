@@ -36,13 +36,28 @@ void LeftShiftUpto(struct Array *ar,int x){
    for(int i=len;i<ar->length;i++)
    ar->arr[i]=0;
 }
+void leftRotateUpto(struct Array *ar,int n){
+    for (int i = 0; i <n; i++)
+    {
+        int temp=0;
+        temp=ar->arr[0];
+        int j;
+        for ( j=0;j<ar->length-1;j++)
+        {
+            ar->arr[j]=ar->arr[j+1];
+        }
+        ar->arr[j]=temp; 
+    }
+    
+}
 int main(){
     struct Array Arr={{1,2,3,4,5},5,10};
    // LeftShftOfArray(&Arr);
     //display(Arr);
      //LeftShiftUpto(&Arr,3);
      display(Arr);
-     leftRotate(&Arr);
+     //leftRotate(&Arr);
+     leftRotateUpto(&Arr,3);
      display(Arr);
 
 }

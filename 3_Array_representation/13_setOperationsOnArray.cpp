@@ -6,6 +6,7 @@ struct Array {
     int length;                                                     //array but if element of 2nd
     int size;                                                        // array already present in 1st array then don't copy it.
 };
+// searching for element;
 bool search(struct Array *ar1,int key){
     for(int i=0;i<ar1->length;i++)
     if(ar1->arr[i]==key)                                               // time complexity =O(n^2);
@@ -13,7 +14,7 @@ bool search(struct Array *ar1,int key){
     return false;
 }
 void UnionOfTwoArray(struct Array *arr1, struct Array *arr2){   
-       int x=arr1->length; 
+       int x=arr1->length; //taking length of first array so that we can start from here for 2nd array;
        struct Array *arr3=new Array;    
        for(int i=0;i<arr1->length;i++)
        arr3->arr[i]=arr1->arr[i];  
