@@ -1,24 +1,34 @@
 #include<iostream>
 using namespace std;
-int Maximum_diff(int arr[],int n){
-    int diff[n];
-
-    for(int i = 0; i < n-1; i++){
-        diff[i]=arr[i+1]-arr[i];
-    }
-    int currdif=diff[0];
-    for(int i = 1; i < n-1; i++){
-       if(diff[i-1]>0)
-       diff[i]=diff[i-1]+diff[i];
-       if(diff[i]>currdif)
-       currdif=diff[i];
-    }
-    return currdif;
-
-}
 int main(){
-int arr[]={-2,-3,4,-1,-2,1,5,-3};
-int n=sizeof(arr)/sizeof(arr[0]);
-cout<<Maximum_diff(arr,n);
+int  a[100]={2,5,7,18,33,40};
+int b[100]={3,4,10,13,25};
+int c[100];
+int i=0;
+int j=0;
+int k=0;
+while(i<=5&&j<=4)
+{
+
+    if(a[i]<b[j]){
+        c[k]=a[i];
+        k++;
+        i++;
+    }
+    else{
+        c[k]=b[j];
+        k++;
+        j++;
+    }
+    while(i<=5)
+    {
+        c[k]=a[i];
+        k++;
+        i++;
+    }
+    while(j<=4&&j>4)
+}
+for(int l=0;i<=k;i++){
+cout<<c[l]<<" ";}
 return 0;
 }
